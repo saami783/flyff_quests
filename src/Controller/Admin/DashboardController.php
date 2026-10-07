@@ -32,5 +32,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkTo(TagCrudController::class, 'Tags', 'fa-solid fa-tag');
         yield MenuItem::linkTo(PlayerCrudController::class, 'Players', 'fa-solid fa-gamepad');
         yield MenuItem::linkTo(UserCrudController::class, 'Admins', 'fa-solid fa-users');
+
+        yield MenuItem::linkToRoute('Home',  'fa-solid fa-arrow-right-from-bracket', 'app_home');
     }
 }
